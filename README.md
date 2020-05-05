@@ -9,17 +9,11 @@ The local servers can also record regional data and storing backup before sendin
 ___
 Following are the codes involved:
 
-1. NodeMCU ESP8266 + DHT-11 Temperature Sensor (client)
+1. NodeMCU ESP8266 + DHT-11 Temperature Sensor (client)<br>NodeMCU is a microcontoller with WiFi capability, it collects temperature and humidity data using DHT-11 sensor and sends this data to the local server using MQTT
 
- NodeMCU is a microcontoller with WiFi capability, it collects temperature and humidity data using DHT-11 sensor and sends this data to the local server using MQTT
+2. Raspberry Pi	(server)<br>Raspberry Pi runs an MQTT server, collects data from nodes and pushes the data to a Google Sheet<br>There is also some control mechanism involved using an android application to turn the system ON/OFF
 
-2. Raspberry Pi	(server)
-
- Raspberry Pi runs an MQTT server, collects data from nodes and pushes the data to a Google Sheet<br>There is also some control mechanism involved using an android application to turn the system ON/OFF
-
-3. Google Cloud Platform (Cloud)
-
- The data is pushed to an HTTPS URL, which is the URL for a web app used to retrieve data from the local servers and store them in a Google Sheet
+3. Google Cloud Platform (Cloud)<br>The data is pushed to an HTTPS URL, which is the URL for a web app used to retrieve data from the local servers and store them in a Google Sheet
 
 App used in this project is MQTT Dash, you can download it [here](https://play.google.com/store/apps/details?id=net.routix.mqttdash&hl=en_US)
 
