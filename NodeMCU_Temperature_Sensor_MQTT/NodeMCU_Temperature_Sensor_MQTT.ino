@@ -47,7 +47,7 @@ void ReceivedMessage(char* topic, byte* payload, unsigned int length) {         
     Serial.println(t);                                                                    //Print celsius temperature value
     
     if (isnan(h) || isnan(t) || isnan(f)) {                                               //if garbage values
-      Serial.println(F("Failed to read from DHT sensor!"));         
+      Serial.println(("Failed to read from DHT sensor!"));         
       client.publish(mqttp_topic, "Sensor Failure");                                       //send Sensor Failure message to the server
       ledBlink(1);
       delay(3700);
