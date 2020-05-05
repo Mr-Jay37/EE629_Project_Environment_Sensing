@@ -3,17 +3,11 @@
 These are the instructions for the Raspberry Pi side of this project
 <br>There are three python files here
 
-1. wait.py
+1. wait.py<br>This file is just a file to run a delay function for 5 seconds. For the code to run properly on startup the boot files need to be run first properly. Just so that the main code does not start before the boot files, a delay is added
 
- This file is just a file to run a delay function for 5 seconds. For the code to run properly on startup the boot files need to be run first properly. Just so that the main code does not start before the boot files, a delay is added
+2. EE629.py<br>This file contains the main code of collecting data and pushing it to the Google Sheet
 
-2. EE629.py
-
- This file contains the main code of collecting data and pushing it to the Google Sheet
-
-3. Master_Control.py
-
- This file is started at boot in order to turn ON/OFF the program, this is just extra control for a headless setup of the Pi.
+3. Master_Control.py<br>This file is started at boot in order to turn ON/OFF the program, this is just extra control for a headless setup of the Pi.
 
 Log.log file is there to record the output of the codes above, since the terminal won't be accessed at all. These codes are going to run in the background.
 
