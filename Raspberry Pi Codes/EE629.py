@@ -11,7 +11,7 @@ topic = "Test"
 topic1 = "Device1"
 topic2 = "RemoteControl"
 client_ID = "Pi"
-URL = "https://script.google.com/macros/s/AKfycby4CAVolag6ZKC-6pEOL0wpCYAwNm-SilMFH2yqcutimJQdNNHc/exec?device1="
+URL = "https://script.google.com/macros/s/AKfycbw7JnRY2feD1v6gP6c0nD8eT9fWIE8Z6AvYRRh8vBkCRnr6ke9G/exec?device1="
 data = ''
 machine = 0
 
