@@ -5,7 +5,6 @@
 Aim of the project is to collect sensor data from Nodes to local servers and from the local server to the cloud server.
 
 Reason for this three part architecture is to allow scalability. The nodes and local servers are fairly easy to install physically.
-The local servers can also record regional data and storing backup before sending to the cloud server.
 ___
 Following are the codes involved:
 
